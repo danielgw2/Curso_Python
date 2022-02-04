@@ -1,0 +1,22 @@
+"""
+18 - algoritimo que leia n números e imprima o maior deles e diga quantas vezes o maior numero foi lido. by input
+"""
+
+contador = 0
+lista = list()
+
+for intervalo in range(10):
+    num = int(input(f'Digite o {intervalo+1} valor: '))
+
+# Criando uma lista para receber os inputs
+    lista.append(num)
+
+print()
+
+# Definindo o maior número
+maximo = max(lista)
+print(f'O Maior número é {maximo}')
+
+# Checando quantas vezes o maior se repete
+qtd = lista.count(maximo)
+print(f'E o maior número repete {qtd} vezes')
